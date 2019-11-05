@@ -127,6 +127,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .navbar-shadow {
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.2);
+    }
 ]]></b:skin>
   </head>
   <body>
@@ -170,7 +173,7 @@
           <b:include name='content'/>
         </b:includable>
         <b:includable id='content'>
-          <nav class="navbar is-primary has-shadow">
+          <nav class="navbar is-primary navbar-shadow">
               <div class="navbar-brand">
                 <a class="navbar-item is-hidden" expr:href="data:homePageUrl"><data:blog.title/></a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="#NavbarContent">
@@ -433,7 +436,7 @@
         </b:includable>
         <b:includable id='title'>
           <h1 class="title">
-            <b:tag cond='data:view.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a' class='has-text-white'>
+            <b:tag cond='data:view.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a' class='has-text-grey-dark'>
               <data:title/>
             </b:tag>
           </h1>
