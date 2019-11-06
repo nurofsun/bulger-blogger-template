@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!DOCTYPE html>
-<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.languageDirection'>
+<html expr:lang='data:blog.locale' b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' expr:dir='data:blog.languageDirection'>
   <head>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <b:if cond='data:view.isSingleItem'>
@@ -175,7 +175,7 @@
           <b:class cond="data:view.isSingleItem" name="columns is-multiline"/>
           <div>
             <b:class cond="data:view.isSingleItem" name="column is-two-thirds"/>
-            <b:section id="Main" class="main-content">
+            <b:section id="Main" class="main-content" maxwidgets='1'>
               <b:widget id="Blog1" type="Blog" title="Blog Posts" locked="true"/>
             </b:section>
           </div>
@@ -264,7 +264,7 @@
           <a class="has-text-grey-dark" expr:id="data:post.id" expr:href="data:post.url" expr:title="data:post.title">
             <div class="content card-content post-body-snippet">
               <b:include name="postTitle" data="post"/>
-              <b:eval expr="snippet(data:post.body, { links: false, linebreaks: false, length: 100 })"/>
+              <b:eval expr="snippet(data:post.body, { links: false, linebreaks: false, length: 200})"/>
               <br/>
               <br/>
               <div class="level is-mobile">
