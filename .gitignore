@@ -1,6 +1,6 @@
-css
-node_modules
-src
+css/
+node_modules/
+src/
 .browserslistrc
 package.json
 yarn.lock
