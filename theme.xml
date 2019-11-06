@@ -181,8 +181,8 @@
         </p>
       </div>
     </footer>
-    <b:defaultmarkups><!--{{{-->
-      <b:defaultmarkup id="PageList1" type="PageList"><!--{{{-->
+    <b:defaultmarkups>
+      <b:defaultmarkup id="PageList1" type="PageList">
         <b:includable id='main'>
           <b:include name='content'/>
         </b:includable>
@@ -221,8 +221,8 @@
             </b:loop>
           </div>
         </b:includable>
-      </b:defaultmarkup><!--}}}-->
-      <b:defaultmarkup type="Blog"><!--{{{-->
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Blog">
         <b:includable id='main' var='this'>
           <div class='blog-posts hfeed columns is-multiline'>
             <b:loop index='i' values='data:posts' var='post'>
@@ -391,8 +391,8 @@
             </b:if>
           </section>
         </b:includable>
-      </b:defaultmarkup><!--}}}-->
-      <b:defaultmarkup type="PopularPosts"><!--{{{-->
+      </b:defaultmarkup>
+      <b:defaultmarkup type="PopularPosts">
         <b:includable id='main' var='this'>
           <b:include name='widget-title'/>
           <div class="widget-content layout-popularposts">
@@ -430,8 +430,8 @@
             </b:loop>
           </div>
         </b:includable>
-      </b:defaultmarkup><!--}}}-->
-      <b:defaultmarkup type="Header"><!--{{{-->
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Header">
         <b:includable id='main' var='this'>
           <div class='header-widget hero is-light has-background-white'>
             <div class="hero-body">
@@ -472,8 +472,8 @@
             </b:tag>
           </h1>
         </b:includable>
-      </b:defaultmarkup><!--}}}-->
-      <b:defaultmarkup type="Profile"><!--{{{-->
+      </b:defaultmarkup>
+      <b:defaultmarkup type="Profile">
         <b:includable id='main' var='this'>
           <div class="hero-body content has-text-centered">
             <div class="wrapper-profile">
@@ -578,7 +578,7 @@
             View
           </a>
         </b:includable>
-      </b:defaultmarkup><!--}}}-->
+      </b:defaultmarkup>
       <b:defaultmarkup type="Common">
         <b:includable id="breadcrumbs">
           <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
@@ -606,7 +606,7 @@
             /*]]>*/</style>
         </b:includable>
       </b:defaultmarkup>
-    </b:defaultmarkups><!--}}}-->
+    </b:defaultmarkups>
     <script>//<![CDATA[
       document.addEventListener("DOMContentLoaded", function() {
       var elements = [ document.querySelector('#Header') ];
